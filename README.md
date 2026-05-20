@@ -15,7 +15,7 @@ The module also supports reconstructing Cartesian coordinates back from BAT coor
 
 ---
 
-# What the File Does
+### What the File Does
 
 The system:
 - reads molecular atom positions,
@@ -30,7 +30,7 @@ This representation is useful because internal coordinates are often:
 
 ---
 
-# Main Features
+### Main Features
 
 - Converts Cartesian coordinates → BAT coordinates
 - Computes:
@@ -43,7 +43,7 @@ This representation is useful because internal coordinates are often:
 
 ---
 
-# Main Workflow
+### Main Workflow
 
 ```text
 Cartesian Coordinates
@@ -59,27 +59,27 @@ Cartesian Reconstruction
 
 ---
 
-# Key Functions
+### Key Functions
 
-## `_find_torsions()`
+#### `_find_torsions()`
 
 Builds torsion-angle relationships between bonded atoms.
 
 ---
 
-## `_single_frame()`
+#### `_single_frame()`
 
 Converts a molecular structure from Cartesian coordinates into BAT coordinates.
 
 ---
 
-## `Cartesian()`
+#### `Cartesian()`
 
 Reconstructs 3D Cartesian coordinates from BAT coordinates.
 
 ---
 
-# Technologies Used
+### Technologies Used
 
 - JAX
 - MDAnalysis
@@ -88,7 +88,7 @@ Reconstructs 3D Cartesian coordinates from BAT coordinates.
 
 ---
 
-# Applications
+### Applications
 
 This module can be used for:
 - molecular structure learning
@@ -110,7 +110,7 @@ The system transforms high-dimensional input data into compact latent-space repr
 
 ---
 
-# What the File Does
+### What the File Does
 
 The module:
 - builds configurable neural network encoders,
@@ -120,9 +120,9 @@ The module:
 
 ---
 
-# Main Components
+### Main Components
 
-## `BaseEncoder`
+#### `BaseEncoder`
 
 Defines the shared encoder structure.
 
@@ -133,7 +133,7 @@ Includes:
 
 ---
 
-## `CustomEncoder`
+#### `CustomEncoder`
 
 Implements the encoding process.
 
@@ -144,7 +144,7 @@ The encoder:
 
 ---
 
-## `CustomAutoEncoder`
+#### `CustomAutoEncoder`
 
 Wraps the encoder into an autoencoder-style architecture.
 
@@ -155,7 +155,7 @@ The model:
 
 ---
 
-# Model Workflow
+### Model Workflow
 
 ```text
 Input Data
@@ -171,7 +171,7 @@ Latent Representation
 
 ---
 
-# Features
+### Features
 
 - Configurable hidden layer sizes
 - Custom latent dimensions
@@ -182,7 +182,7 @@ Latent Representation
 
 ---
 
-# Technologies Used
+### Technologies Used
 
 - JAX
 - Neural network dense layers
@@ -191,7 +191,7 @@ Latent Representation
 
 ---
 
-# Example Usage
+### Example Usage
 
 ```python
 model = CustomAutoEncoder(
@@ -205,7 +205,7 @@ latent_vector = model(x)
 
 ---
 
-# Applications
+### Applications
 
 This module can be used for:
 - representation learning
